@@ -1,0 +1,14 @@
+model:
+  base_model: "mistralai/Mistral-7B-Instruct-v0.1"
+  device: "cuda"  # or "cpu"
+  use_lora: true
+
+training:
+  epochs: 10
+  batch_size: 2
+  learning_rate: 2e-5
+  max_seq_length: 512
+
+processing:
+  chunk_size: 512
+  chunk_overlap: 50
